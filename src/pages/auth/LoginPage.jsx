@@ -27,7 +27,7 @@ export default function LoginPage() {
       })
       if (signInError) throw signInError
 
-      navigate('/')
+      navigate('/login/success')
     } catch (err) {
       setError(err.message || '로그인 중 오류가 발생했습니다.')
     } finally {

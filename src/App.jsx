@@ -5,6 +5,7 @@ import SectionPage from './pages/SectionPage'
 import BoardPage from './pages/BoardPage'
 import LoginPage from './pages/auth/LoginPage'
 import RegisterPage from './pages/auth/RegisterPage'
+import LoginSuccessPage from './pages/auth/LoginSuccessPage'
 
 function NotFoundPage() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/products" element={<SectionPage title="내 상품 관리" />} />
         <Route path="/company" element={<SectionPage title="회사소개" />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/login/success" element={<LoginSuccessPage />} />
         <Route path="/auth/register" element={<RegisterPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
